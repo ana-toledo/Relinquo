@@ -138,11 +138,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fila.cpp" />
+    <ClCompile Include="jogador.cpp" />
+    <ClCompile Include="jogoptbr.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="terminal.cpp" />
+    <ClCompile Include="terminaleng.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="terminal.hpp" />
+    <ClInclude Include="fila.hpp" />
+    <ClInclude Include="jogador.hpp" />
+    <ClInclude Include="jogoptbr.hpp" />
+    <ClInclude Include="terminaleng.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
