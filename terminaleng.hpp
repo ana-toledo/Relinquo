@@ -10,29 +10,32 @@
 #include "fila.hpp"
 #include "jogador.hpp"
 
+//bool music_on = true;
 
 //funcoes principais
 void showText(sf::RenderWindow& window, const std::string& mensagem, const sf::Font& font, unsigned int fontSize, float x, float y);
-void limparRetangulo(sf::RenderWindow& window);
-void limparRetanguloChat(sf::RenderWindow& window);
-// muda somente a cor
 void showTextChat(sf::RenderWindow& window, const std::string& mensagem, const sf::Font& font, unsigned int fontSize, float x, float y);
-void exibirNome(sf::RenderWindow& window, int pessoa, const sf::Font& font, float x, float y);
-void showManual(sf::RenderWindow& window, const sf::Font& font);
 
 //funcoes inicio
 void beginning(sf::RenderWindow& window, const sf::Font& font);
 bool verifyEnterKey(sf::Event& evento, bool& enterPressed);
 
-// dia 0
-void showChatDay0(sf::RenderWindow& window, const sf::Font& font);
+
+void showInfo(sf::RenderWindow& window, const sf::Font& font);
 void showReportDay0(sf::RenderWindow& window, const sf::Font& font);
 void showDay0(sf::RenderWindow& window, const sf::Font& font);
 
-void mensagem2(sf::RenderWindow& window, const sf::Font& font);
-void continuacaoMensagem2(sf::RenderWindow& window, const sf::Font& font);
+// dia 1
+void showMailDay1(sf::RenderWindow& window, const sf::Font& font);
+void mailDay1Text(sf::RenderWindow& window, const sf::Font& font, double msg);
+void replymailDay1Text(sf::RenderWindow& window, const sf::Font& font, double msg);
+void final1(sf::RenderWindow& window, const sf::Font& font);
 
 
+void showFinalScreen(sf::RenderWindow& window);
+
+
+// catalogue
 void emptyPage(sf::RenderWindow& window, const sf::Font& font);
 void mushroomManPage(sf::RenderWindow& window, const sf::Font& font);
 void giantScorpionPage(sf::RenderWindow& window, const sf::Font& font);

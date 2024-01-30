@@ -36,7 +36,7 @@ void inicio(sf::RenderWindow& window, const sf::Font& font) {
 
     sf::Texture textureBG;
     sf::Sprite spriteBG;
-    if (!textureBG.loadFromFile("Assets/First screen no txt.png")) {
+    if (!textureBG.loadFromFile("Assets/mail1day1 text.png")) {
         std::cout << "background error\n";
         system("pause");
     }

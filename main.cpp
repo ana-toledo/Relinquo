@@ -26,10 +26,12 @@ int main()
     // criação música
     sf::Music music;
     music.openFromFile("Assets/tudo bem ficar triste nos te amamos.ogg");
-    music.setVolume(20.0);
+    music.setVolume(10.0);
     music.play();
-    music.setPlayingOffset(sf::seconds(428));
+    music.setPlayingOffset(sf::seconds(804));
     music.setLoop(true);
+    //if (!music_on) music.pause();
+    // criar sinal para a musica parar
 
 
     // loop principal
@@ -46,7 +48,7 @@ int main()
         window.clear();
         
         ////////////////////////// chamada de funcoes ///////////////////////////
-        inicio(window, font);
+        beginning(window, font);
         
         ///////////////////////////////////////////////////
 

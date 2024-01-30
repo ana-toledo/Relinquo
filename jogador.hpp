@@ -5,28 +5,43 @@
 
 // Estrutura do jogador
 typedef struct {
-	int vida; // começa em 100 e diminui com o tempo
-	int amzd; // começa com 50 e pode diminuir ou aumentar
-	int atk;
-	int def;
-	int escolhas[10]; // decisoes que podem impactar o final, valor exemplo
+	int dia;
+	bool medkit;
+	bool hook;
+	bool laser;
+	bool combustivel;
+	bool peca;
+	bool manual;
+	bool read_info;
+	int dinheiro;
+	bool has_replied[3][5];
+	int reply_mail[3][5]; // 3 dias, 5 respostas max por dia
+	bool new_message;
 } Player;
 
 // Função que cria o objeto do jogador
 Player* cria_jogador();
 
-// Função que diminui ou cura a vida de B4 
-// se for curado, então o valor no parâmetro deve ser negativo
-void dano_jogador(Player *p, int pontos);
 
-// Função que altera o nivel de amizade entre os agentes
-// se a interação for positiva, ele ganha pontos
-void amizade_jogador(Player *p, int pontos);
+void passa_dia(Player* p);
 
 // Função que guarda as decisões importantes do jogador
-void decisao_jogador(Player *p, int esc, int pos);
+void resp_jogador(Player *p, int dia, int pos, int esc);
+
+// Função que salva se respondeu
+void replied(Player* p, int dia, int pos);
+
+
+// Funções de compra
+void bought_mask(Player* p);
+void bought_laser(Player* p);
+void bought_medkit(Player* p);
+void bought_hook(Player* p);
+
 
 // Função que faz o free da estrutura
 void mata_jogador(Player *p);
+
+void update_read_info(Player* p);
 
 #endif

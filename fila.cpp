@@ -59,7 +59,7 @@ void remove_elemento_fila(Fila* fi) {
 void esvazia_fila(Fila* fi) {
 	Elemento* aux;
 	if (fi->inicio == NULL) {
-		std::cout << "\nFila Vazia!!";
+		system("pause");
 	}
 	else {
 		aux = fi->inicio;
@@ -68,6 +68,5 @@ void esvazia_fila(Fila* fi) {
 			free(aux);
 			aux = fi->inicio;
 		} while (aux != NULL);
-		printf("\nFila Esvaziada!!");
 	}
 }
