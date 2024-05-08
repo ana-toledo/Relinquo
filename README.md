@@ -1,2 +1,5 @@
-This was the project created for the end of Data Structures and Algorithms course in my university.
-It is a game where you exchange emails with a field agent in a new discoverd planet. This is only the demo version of it.
+## Relinquo
+- Desenvolvido em C++.
+- Versão Demo.
+Esse é o projeto final de Algoritmos e Estrutura de Dados 1.
+É um jogo no qual você troca e-mails com um agente de campo na descoberta de um novo planeta.
